@@ -1,4 +1,7 @@
 {
+  "homepage": "https://cjcode27.github.io/spes-website",
+  "predeploy": "npm run build",
+  "pdeploy": "gh-pages -d build",
   "name": "spes-website",
   "version": "0.1.0",
   "private": true,
