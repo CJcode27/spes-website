@@ -1,0 +1,13 @@
+name: Fix submodules (noop)
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No-op
+        run: echo "This workflow exists to document that the previous deploy failed due to submodule configuration. Fix by removing submodule refs or updating .gitmodules in the main repo." 
+
