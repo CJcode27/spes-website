@@ -177,7 +177,7 @@ export default function MainPage({ onOfficeClick, offices }) {
       </section>
 
       <footer className="footer">
-        <div className="footer-logo">Barangay LGU</div>
+        <div className="footer-logo">Barangay Sinalhan</div>
         <p>© 2026 Barangay Sinalhan. All rights reserved.</p>
       </footer>
     </>
