@@ -86,8 +86,8 @@ export default function OfficeDetailPage({ office, onBack }) {
         </div>
       </div>
       <footer className="footer">
-        <div className="footer-logo">Barangay LGU</div>
-        <p>© 2025 Barangay Local Government Unit. All rights reserved.</p>
+        <div className="footer-logo">Barangay Sinalhan</div>
+        <p>© 2026 Barangay Sinalhan. All rights reserved.</p>
       </footer>
     </div>
   );
