@@ -22,7 +22,7 @@ const OFFICES = [
       "Health Certificates",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "BHW Team 1 – Ext. 101",
+    contact: "BHW Team 1 – (63)912 3456 789",
   },
   {
     id: "bhw2",
@@ -41,7 +41,7 @@ const OFFICES = [
       "Wound Dressing",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "BHW Team 2 – Ext. 102",
+    contact: "BHW Team 2 – (63)912 3456 789",
   },
   {
     id: "philhealth",
@@ -60,7 +60,7 @@ const OFFICES = [
       "Coverage Inquiries",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "PhilHealth Desk – Ext. 103",
+    contact: "PhilHealth Desk – (63)912 3456 789",
   },
   {
     id: "badac",
@@ -79,7 +79,7 @@ const OFFICES = [
       "Awareness Programs",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "BADAC Office – Ext. 104",
+    contact: "BADAC Office – (63)912 3456 789",
   },
   {
     id: "office",
@@ -98,7 +98,7 @@ const OFFICES = [
       "Official Documents",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "Main Office – Ext. 100",
+    contact: "Main Office – (63)912 3456 789",
   },
   {
     id: "vawc",
@@ -117,7 +117,7 @@ const OFFICES = [
       "Safe House Coordination",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "VAWC Desk – Ext. 105",
+    contact: "VAWC Desk – (63)912 3456 789",
   },
   {
     id: "clearance",
@@ -128,16 +128,122 @@ const OFFICES = [
     bg: "linear-gradient(135deg, #143d0d 0%, #2a6b1a 50%, #143d0d 100%)",
     description:
       "Issuance of barangay clearances for employment, legal, business, and personal purposes.",
-    services: [
-      "Employment Clearance",
-      "Business Clearance",
-      "NBI Clearance Support",
-      "Police Clearance Support",
-      "Court Clearance",
+    feeGroups: [
+      {
+        title: "UNIFIED BARANGAY CODE — BARANGAY CLEARANCE (For the Issuance of Business Permit)",
+        items: [
+          "Accounting Services Firm - 500.00",
+          "Barbershops/ Beauty Shops /Boutiques/Salon and Spa - 300.00",
+          "Branded Commercial Stores - 1,000.00",
+          "Carwash Shop - 300.00",
+          "Catering/Event Services - 300.00",
+          "Commercial Stores - 500.00",
+          "Commercial Rental Spaces - 500.00",
+          "Convenience Stores - 500.00",
+          "Construction Firms & Hardware - 1,000.00",
+          "Dry and Wet Market Stalls - 500.00",
+          "Engineering Firms and Services - 500.00",
+          "Financial Firms and Pawnshops - 500.00",
+          "Food Services and Catering - 500.00",
+          "Gasoline Stations - 1,000.00",
+          "Healthcare and Medical Facilities - 1,000.00",
+          "Insurance Firms and Services - 500.00",
+          "Internet Café Shops - 500.00",
+          "Junk Shops - 500.00",
+          "Learning Centers - 500.00",
+          "LPG Trading - 1,000.00",
+          "Motor Parts and Services Shops - 1,000.00",
+          "Online Shops and Services - 500.00",
+          "Photo Centers - 500.00",
+          "Residential Rentals - 500.00",
+          "Residential and Development - 1,000.00",
+          "Sari-Sari Store - 300.00",
+          "Transport and Vehicle Services - 500.00",
+          "Travel Agencies - 500.00",
+          "Water Refilling Stations - 500.00",
+          "Corporations/Factories/ Manufacturing Firms - 1,000.00",
+          "Other businesses not mentioned - 1,000.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — SERVICE FEES OR CHARGES (Barangay Certifications)",
+        items: [
+          "Barangay Identification (ID) - 100.00",
+          "Barangay Business Closure - 30.00",
+          "Barangay Clearance - 50.00",
+          "Good Moral Certification - 30.00",
+          "Guardianship Certification - 30.00",
+          "Health Certification - 30.00",
+          "Late Registration - 30.00",
+          "No Income/ No Business - 30.00",
+          "Residency Certification - 30.00",
+          "Solo Parent - 30.00",
+          "Tricycle Legalization - 100.00",
+          "Certificate of Indigency - Free",
+          "Other Certifications - 30.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — SERVICE FEES OR CHARGES (Use of Barangay Owned Properties / Facility)",
+        items: [
+          "Day - 100.00 per hour",
+          "Night - 200.00 per hour",
+          "LED Wall (Only for Barangay Dila) - 1,000.00 for 15 days",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — For the Issuance of Locational Clearance / Building Permit (Construction)",
+        items: [
+          "Residential - 300.00",
+          "Commercial - 500.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — For the Issuance of Locational Clearance / Building Permit (Linear Operations)",
+        items: [
+          "Minor - 300.00",
+          "Major - 500.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — Other Fees and Charges (Locational Clearance / Building Permit)",
+        items: [
+          "Fees on places of recreation which charge admission fees - 300.00",
+          "Cockpit Operations - 1,000.00",
+          "Lupong Tagapamayapa Filing Fee - 100.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — Certificates and Fees",
+        items: [
+          "Barangay Identification (ID) - 100.00",
+          "Barangay Business Closure - 30.00",
+          "Barangay Clearance - 50.00",
+          "Good Moral Certification - 30.00",
+          "Guardianship Certification - 30.00",
+          "Health Certification - 30.00",
+          "Late Registration - FREE",
+          "No Income/ No Business - 30.00",
+          "Residency Certification - 30.00",
+          "Solo Parent - 30.00",
+          "Tricycle Legalization - 100.00",
+          "Certificate of Indigency - FREE",
+          "Other Certificate - 30.00",
+        ],
+      },
+      {
+        title: "UNIFIED BARANGAY CODE — Use of Barangay Owned Properties (Facility)",
+        items: [
+          "Day - 100.00 per hour",
+          "Night - 200.00 per hour",
+          "LED Wall (Only for Barangay Dila) - 1,000.00 for 15 days",
+        ],
+      },
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "Clearance Office – Ext. 106",
+    contact: "Clearance Office – (049)534-2696",
   },
+
   {
     id: "lupon",
     name: "Lupon",
@@ -155,7 +261,7 @@ const OFFICES = [
       "Case Records",
     ],
     schedule: "Monday – Friday, 8:00 AM – 5:00 PM",
-    contact: "Lupon Secretariat – Ext. 107",
+    contact: "Lupon Secretariat – (63)912 3456 789",
   },
 ];
 
@@ -448,6 +554,10 @@ const styles = `
   /* ── FADE IN ── */
   .fade-in { opacity: 0; transform: translateY(22px); transition: opacity 0.65s var(--T), transform 0.65s var(--T); }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── SERVICES STAGGER ANIMATION ── */
+  @keyframes servicesIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
 
   /* ── SCROLLBAR ── */
   ::-webkit-scrollbar { width: 5px; }

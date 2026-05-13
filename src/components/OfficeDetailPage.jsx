@@ -32,15 +32,70 @@ export default function OfficeDetailPage({ office, onBack }) {
               <p className="office-section-label" style={{ marginTop: "1.75rem" }}>
                 Available Services
               </p>
-              <ul className="services-list">
-                {office.services.map((s) => (
-                  <li className="service-item" key={s}>
-                    <div className="service-dot" style={{ background: office.accent }} />
-                    {s}
-                  </li>
-                ))}
-              </ul>
+
+              {office.feeGroups?.length ? (
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.75rem",
+                  }}
+                >
+                  {office.feeGroups.map((group) => (
+                    <details
+                      key={group.title}
+                      style={{
+                        background: "white",
+                        border: "1px solid #e5e7eb",
+                        borderRadius: "12px",
+                        padding: "0.75rem 0.9rem",
+                        overflow: "hidden",
+                      }}
+                    >
+                      <summary
+                        style={{
+                          cursor: "pointer",
+                          fontWeight: 500,
+                          fontFamily: "'Sans-serif', serif",
+                          color: "#111827",
+                          listStyle: "none",
+                          outline: "none",
+                        }}
+                      >
+                        {group.title}
+                      </summary>
+
+                      <div style={{ marginTop: "0.6rem" }}>
+                        <ul
+                          className="services-list"
+                          style={{ animation: "servicesIn 420ms var(--T) both" }}
+                        >
+                          {group.items.map((s) => (
+                            <li className="service-item" key={s}>
+                              <div
+                                className="service-dot"
+                                style={{ background: office.accent }}
+                              />
+                              {s}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </details>
+                  ))}
+                </div>
+              ) : (
+                <ul className="services-list">
+                  {(office.services || []).map((s) => (
+                    <li className="service-item" key={s}>
+                      <div className="service-dot" style={{ background: office.accent }} />
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </FadeSection>
+
           </div>
           <div>
             <FadeSection delay={0.15}>
@@ -74,6 +129,7 @@ export default function OfficeDetailPage({ office, onBack }) {
                   Please bring a valid government-issued ID and any relevant documents. Staff will guide you through the process.
                 </p>
               </div>
+              
               <button
                 className="btn-primary"
                 style={{ width: "100%", justifyContent: "center", display: "flex" }}

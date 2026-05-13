@@ -3,12 +3,16 @@ import { scrollToId } from "../utils/scrollTo";
 
 export default function MainPage({ onOfficeClick, offices }) {
   const officials = [
-    { initials: "JD", name: "Ladis Lao Alicbusan", role: "Barangay Captain" },
-    { initials: "MR", name: "Ladis Lao Alicbusan", role: "Barangay Kagawad" },
-    { initials: "AR", name: "Ladis Lao Alicbusan", role: "Barangay Kagawad" },
-    { initials: "LS", name: "Ladis Lao Alicbusan", role: "Barangay Kagawad" },
-    { initials: "RM", name: "Ladis Lao Alicbusan", role: "Barangay Treasurer" },
-    { initials: "GB", name: "Ladis Lao Alicbusan", role: "Barangay Secretary" },
+    { initials: "L", name: "LADISLAO B. ALICBUSAN", role: "Barangay Chairman" },
+    { initials: "R", name: "RENAN E. DIA", role: "Barangay Councilor" },
+    { initials: "V", name: "VICTOR B. ANDAYA", role: "Barangay Councilor" },
+    { initials: "D", name: "DAVID C. SANTOS", role: "Barangay Councilor" },
+    { initials: "R", name: "ROLANDO T. RIEGO", role: "Barangay Councilor" },
+    { initials: "J", name: "JOSEPHINE A. PULIDO", role: "Barangay Councilor" },
+    { initials: "PB", name: "PAUL BRYAN B. BARTOLAZO", role: "Barangay Councilor" },
+    { initials: "E", name: "EMMANUEL A. AMARANTE", role: "Barangay Councilor" },
+    { initials: "L", name: "LUDOVICO B. DIA", role: "Barangay Treasurer" },
+    { initials: "RN", name: "ROSETTE NICOLE F. TAPANGCO", role: "Barangay Secretary" },
   ];
 
   const values = [
@@ -73,7 +77,7 @@ export default function MainPage({ onOfficeClick, offices }) {
         </div>
         <div className="stats-row">
           {[
-            { n: "8,000+", l: "Residents" },
+            { n: "26,000+", l: "Residents" },
             { n: "8", l: "Offices" },
             { n: "30+", l: "Services" },
             { n: "24/7", l: "Commitment" },
